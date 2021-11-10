@@ -1,0 +1,1043 @@
+/*
+  Theme Name: Wanted Surf School
+  Developer Company: Digital Connection
+  Developer: Hem Raj Bhatt
+*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*font family*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+/*font-family: 'Caveat', cursive;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
+@font-face {
+    font-family: 'Tahoma';
+    src: url('../fonts/Tahoma.eot');
+    src: url('../fonts/Tahoma.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Tahoma.woff2') format('woff2'),
+    url('../fonts/Tahoma.woff') format('woff'),
+    url('../fonts/Tahoma.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Book.eot');
+    src: url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gotham-Book.woff2') format('woff2'),
+    url('../fonts/Gotham-Book.woff') format('woff'),
+    url('../fonts/Gotham-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* color  variable */
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --acent-color: #e2edf6;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 33px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 23px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+.dc-btn {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px 27px;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-transition: ease-in-out .5s;
+    -moz-transition: ease-in-out .5s;
+    transition: ease-in-out .5s;
+    border:0;
+    outline: none;
+}
+
+.heading__style-left{
+    position: relative;
+}
+
+.heading__style-left::before{
+    content: '';
+    background: url("../images/head-line.svg");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: -94%;
+    max-width: 65px;
+}
+
+
+.heading__style-center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.heading__style-center::before{
+    content: '';
+    background: url("../images/head-line.svg");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: -94%;
+    background-position: center;
+    max-width: 65px;
+}
+
+
+.heading__style__center-white {
+    position: relative;
+}
+
+
+.heading__style__center-white::before {
+    content: '';
+    background: url("../images/head-white-line.svg");
+    background-position-x: 0%;
+    background-position-y: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: -74%;
+     max-width: 65px;
+
+}
+
+
+/* ============================   Topbar Language  Section  Open ==================================== */
+.topbar ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 25px;
+}
+
+.topbar ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--primary-color);
+    padding-left: 15px;
+}
+
+
+/* ============================   Topbar Language  Section  Close  ==================================== */
+
+.logoNav {
+    background-color: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999999;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.header .navbar .logoNav-close {
+    display: none;
+}
+
+.header .navbar .nav-links {
+    display: flex;
+}
+
+.header .navbar .nav-links li a {
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 15px;
+    margin-left: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.header .navbar .nav-links li a::before {
+    content: '';
+    background:url("../images/nav_line.svg");
+    height: 6px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    width: 0%;
+    opacity: 0;
+    transition: ease-in .3s;
+
+}
+
+.header .navbar .nav-links li a:hover::before{
+    opacity: 1;
+    width: 100%;
+
+}
+
+.header .myaccountCart {
+    display: flex;
+}
+
+.header .myaccountCart > div {
+    margin-left: 25px;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.header .myaccountCart > div img {
+    width: 35px;
+}
+
+.header .myaccountCart #burgurMenu {
+    display: none;
+}
+
+.cart-items-container {
+    position: absolute;
+    top: 100%;
+    right: 2%;
+    background: var(--secondary-color);
+    padding: 0 1.5rem;
+    box-shadow: 1px 7px 11px -5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 7px 11px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 7px 11px -5px rgba(0, 0, 0, 0.75);
+    transition: all 2s;
+}
+
+.cart-items-container .cart-item {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.cart-items-container .cart-item .cart-item__img {
+    width: 20%;
+}
+
+.cart-items-container .cart-item .cart-item__img img {
+    width: 80px;
+}
+
+.cart-items-container .cart-item .cart-item__content {
+    width: 80%;
+    padding-left: 47px;
+    padding-right: 51px;
+}
+
+.cart-items-container .cart-item .cart-item__content h3 a {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+}
+
+.cart-items-container .cart-item .cart-item__content .cart-item__price {
+    color: #858585;
+}
+
+.cart-items-container .cart-item .cart-item__remove {
+    color: #858585;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.cart-items-container .cart-items__total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--acent-color);
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.cart-items-container .cart-items__btn .cart-view__cart a {
+    display: block;
+    background: var(--primary-color);
+    text-align: center;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    padding: 8px 0;
+    margin-bottom: .5rem;
+}
+
+.cart-items-container .cart-items__btn .cart-view__checkout a {
+    display: block;
+    background: var(--acent-color);
+    text-align: center;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    padding: 8px 0;
+    margin-bottom: 1.3rem;
+}
+
+.cart-items-container {
+    display: none;
+}
+
+
+/* ============================   Logo Nav Language  Section  Close  ==================================== */
+
+
+/* ============================   Hero  Section  Open  ==================================== */
+.hero {
+    position: relative;
+}
+
+.hero .carousel-item {
+    height: 100vh;
+    min-height: 400px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.hero .carousel-item::before {
+    content: '';
+    display: block;
+    inset: 0;
+    background: black;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.hero .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+
+.hero .carousel-caption h3, .hero .carousel-caption h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+}
+
+.hero .carousel-caption p {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    line-height: 1.1;
+}
+
+.hero .hero_btn {
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+    transition: background .7s;
+}
+
+.hero .hero_btn a {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.hero .hero_btn:hover {
+    background: var(--primary-color);
+}
+
+.hero .hero-social {
+    position: absolute;
+    bottom: 25%;
+    left: 3%;
+}
+
+.hero .hero-social .hero-social__fb a {
+    display: inline-block;
+    border: 1px solid var(--secondary-color);
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    transition: all .8s;
+}
+
+.hero .hero-social .hero-social__fb a:hover {
+    transform: rotate(360deg);
+    background-color: var(--primary-color);
+}
+
+.hero .hero-social .hero-social__instgram a {
+    display: inline-block;
+    border: 1px solid var(--secondary-color);
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-top: 20px;
+    transition: all .8s;
+}
+
+.hero .hero-social .hero-social__instgram a:hover {
+    transform: rotate(360deg);
+    background-color: var(--primary-color);
+}
+
+/* ============================   Hero  Section  Close   ==================================== */
+
+
+/* ============================   whatsapp  Section  Open   ==================================== */
+
+.whatsapp {
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    z-index: 1000;
+}
+
+.whatsapp img {
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+
+}
+
+/* ============================   whatsapp  Section  Close   ==================================== */
+
+/* ============================   Programas SEction Open Close   ==================================== */
+.programas {
+    margin-top: 80px;
+}
+
+.programas .programas__heading {
+    margin: 3rem 0;
+}
+
+.programas .programas__heading h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.programas .programas__heading h2::before{
+    content: '';
+    background: url("../images/head-line.svg");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: -94%;
+    background-position: center;
+    max-width: 65px;
+}
+
+.programas .programas__item {
+    margin-bottom: 25px;
+    -webkit-transition: transform .5s;
+    -moz-transition:  transform .5s;
+    transition:  transform .5s;
+}
+
+.programas .programas__item h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.programas .programas__item p{
+    font-size: 23px;
+}
+.programas .programas__item .dc-btn{
+    border: 1px solid transparent;
+}
+.programas .programas__item .dc-btn:hover{
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.programas .programas__item:hover{
+    transform: translateY(-10px);
+}
+
+.programas .programas__content {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* ============================  Programas SEction   Close   ==================================== */
+
+/* ============================  A nossa onda  Section Open    ==================================== */
+.homeAbout {
+    margin-top: 80px;
+
+}
+/*.homeAbout .homeAbout__left {*/
+/*    background: url("../images/a-nossa-onda.png");*/
+/*    background-size: 100% 100%;*/
+/*    margin-bottom: 25px;*/
+/*}*/
+
+
+.homeAbout .homeAbout__left {
+
+    position: relative;
+
+    height: 100%;
+}
+
+.homeAbout .homeAbout__left img:not(.zoom__img) {
+    max-width: 200px;
+    width: 100%;
+    position: absolute;
+    opacity: .4;
+}
+
+
+
+/*.homeAbout .homeAbout__left img {*/
+/*    !*padding: 6rem;*!*/
+/*    animation: bounce_01 5s infinite;*/
+/*}*/
+
+.homeAbout .homeAbout__left .left__img3 img{
+    right: 0;
+    top: 11px;
+}
+
+.homeAbout .homeAbout__left .left__img2 img{
+    right: 16%;
+    z-index: 2;
+}
+
+.homeAbout .homeAbout__left .left__img4 img{
+    top: 50%;
+}
+
+.homeAbout .homeAbout__left .left__img5 img{
+    top: 50%;
+    right: 0;
+}
+
+.homeAbout .homeAbout__left .left__img6 img{
+    bottom: 0;
+    left: 20px;
+}
+
+.homeAbout .homeAbout__left .left__img7 img{
+    right: 28%;
+    bottom: 0;
+}
+
+
+@keyframes bounce_01 {
+    0%, 100%{
+        transform: translateY(-50px);
+    }
+
+    50%{
+        transform: translateY(-25px);
+    }
+}
+
+
+
+
+
+.homeAbout .homeAbout__left .zoom__img > img {
+    width: 100%;
+    max-width: 400px;
+    opacity: 1;
+
+}
+.homeAbout .homeAbout__left .zoom__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    width: 66%;
+    margin: auto;
+    height: auto;
+    top:100px;
+    animation: bounce_01 5s infinite;
+}
+
+
+.homeAbout .homeAbout__right {
+    padding-left: 55px;
+}
+
+.homeAbout .homeAbout__right h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.homeAbout .homeAbout__right .homeAbout__right-item {
+    margin-bottom: 60px;
+}
+/* ============================ A nossa onda  Section    Close   ==================================== */
+
+/* ============================  as  nossas praias section Open  ==================================== */
+
+.homeNossas {
+    margin-top: 80px;
+    padding: 6rem 0;
+    background:url("../images/banner-slider-bg.jpg");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.homeNossas .homeNossas__left h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.homeNossas .homeNossas__left {
+    padding-right: 55px;
+}
+.homeNossas .carousel-control-next, .homeNossas .carousel-control-prev{
+    opacity: 1;
+}
+.homeNossas .carousel-control-prev span, .homeNossas .carousel-control-next span{
+    font-size: 3rem;
+    opacity: 1;
+}
+
+.homeNossas .homeNossas__right h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-shadow: -1px -1px 2px rgba(150, 150, 150, 1);
+}
+
+/* ============================  as  nossas praias section   Close   ==================================== */
+
+/* ============================  Equipa section   Open   ==================================== */
+.equipa {
+    background: #F6F6F6;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.equipa .equipa__heading h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+.equipa .equipa__inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.equipa .equopa__inner-card img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.equipa .equopa__inner-card:hover img{
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.equipa .equipa__inner .equopa__inner-card {
+    flex: 0 0 19%;
+    margin-bottom: 15px;
+    position: relative;
+    /*overflow: hidden;*/
+
+}
+.equipa .equipa__inner .equopa__inner-overlay {
+    width: 100%;
+    background: var(--primary-color);
+    text-align: center;
+    color: var(--secondary-color);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform-origin: left;
+    z-index: 100;
+    /*transform: translateY(100%);*/
+}
+
+.equipa .equipa__inner .equopa__inner-card:hover   .equopa__inner-overlay{
+    transform: translateX(100%);
+    transform-style: flat;
+    opacity: 1;
+    transition: ease-in-out .52s;
+}
+
+
+
+
+
+.equipa .equipa__inner .equopa__inner-overlay h2{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.equipa .equipa__inner .equopa__inner-overlay h3{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+/* ============================   Equipa section    Close   ==================================== */
+
+/* ============================   Footer section    Open   ==================================== */
+.footer{
+    border-top: 3px solid var(--primary-color);
+    padding: 2rem 0;
+}
+
+.footer .footer__nav ul li a{
+    text-transform: uppercase;
+    line-height: 2;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+.footer .footer__address ul li {
+    line-height: 2;
+}
+.footer .footer__address ul li a{
+    color: var(--primary-color);
+}
+.footer .footer__social ul {
+    display: flex;
+    margin-top: 15px;
+}
+.footer .footer__social ul li {
+    margin-right: 25px;
+}
+.footer .footer__social ul li a{
+    display: inline-block;
+    color: var(--primary-color);
+    height: 30px;
+    width:30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border:1px solid var(--primary-color);
+
+}
+
+/* ============================   Footer section   Close   ==================================== */
+
+
+
+/* ====================================
+******************************************************
+programas section Open
+ ******************************************************
+ ======================================= */
+
+.pageHeader-programas {
+    background: url("../images/programas-header.png");
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageHeader-programas .pageHeader__heading h2{
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+justify-content: center;
+}
+
+.programas__pages {
+    margin-bottom: 55px;
+    overflow: hidden;
+}
+
+/* ==================================== programas section Close ======================================= */
+
+
+
+/* ====================================
+******************************************************
+about us page  section Open
+ ******************************************************
+ ======================================= */
+.pageHeader-about {
+    background: url("../images/aboutus-banner-head.png");
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageHeader-about .pageHeader__heading h2{
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+justify-content: center;
+}
+/* ==================================== about us  section Close ======================================= */
+
+
+
+/* ====================================
+******************************************************
+equipa & praias  section Open
+ ******************************************************
+ ======================================= */
+.pageHeader-equipa {
+    background: url("../images/team-bg-head.png");
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageHeader-equipa .pageHeader__heading h2{
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+justify-content: center;
+}
+
+/* ============================  as  nossas praias section Open  ==================================== */
+
+.homeNossas-page {
+
+    padding: 6rem 0;
+    background:url("../images/banner-slider-bg.jpg");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+.homeNossas-page .homeNossas__left h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.homeNossas-page .homeNossas__left {
+    padding-right: 55px;
+}
+.homeNossas-page .carousel-control-next, .homeNossas-page  .carousel-control-prev{
+    opacity: 1;
+}
+.homeNossas-page .carousel-control-prev span, .homeNossas-page .carousel-control-next span{
+    font-size: 3rem;
+    opacity: 1;
+}
+
+.homeNossas-page .homeNossas__right h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    text-shadow: -1px -1px 2px rgba(150, 150, 150, 1);
+}
+
+
+
+/* ==================================== equipa & praias  section Close ======================================= */
+
+/* ====================================
+******************************************************
+as nossas praias Open
+ ******************************************************
+ ======================================= */
+.pageHeader-asnossas {
+    background: url("../images/asnoss-head-bg.png");
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pageHeader-asnossas  .pageHeader__heading h2{
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+justify-content: center;
+}
+/* ====================================  as nossas praias  section Close ======================================= */
+
+
+
+/* ====================================
+******************************************************
+fale connosco Open
+ ******************************************************
+ ======================================= */
+.pageHeader-contact {
+    background: url("../images/contact-head-bg.png");
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__form  .contact__form-inner{
+    background: var(--secondary-color);
+    -webkit-box-shadow: -1px 1px 16px -1px rgba(0,0,0,0.25);
+    box-shadow: -1px 1px 16px -1px rgba(0,0,0,0.25);
+    padding: 5rem 5rem;
+    margin-top: -8rem;
+    margin-bottom: 3rem;
+}
+
+.contact__form  .contact__form__left h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--primary-color);
+    position: relative;
+    display: flex;
+}
+.contact__form  .contact__form__left {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.contact__form  .contact__form__left   ul li a {
+    color: var(--primary-color);
+    line-height: 2;
+}
+
+.contact__form  .contact__form__left .footer__social ul li {
+    margin-right:15px;
+}
+.contact__form  .contact__form__left  .footer__social ul li a{
+    display: inline-block;
+    color: var(--primary-color);
+    height: 30px;
+    width:30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border:1px solid var(--primary-color);
+}
+.contact__form  .contact__form__left  .footer__social ul {
+    display: flex;
+    margin-top: 15px;
+}
+.contact__form .contact__form-right .dc-btn{
+    border:1px solid transparent;
+}
+.contact__form .contact__form-right .dc-btn:hover {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.contact__form .contact__form-right label {
+    font-size: 13px;
+    font-family: 'Tahoma';
+}
+
+/* ====================================  fale connosco  section Close ======================================= */
+
+
+
+
+
+
+
+
+
