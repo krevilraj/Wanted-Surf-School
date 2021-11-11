@@ -110,3 +110,9 @@ function lozaizidoro_config()
 }
 
 add_action('after_setup_theme', 'lozaizidoro_config', 0);
+
+function replace_text($text) {
+  $text = str_replace('minutes', 'm', $text);
+  return $text;
+}
+add_filter('the_content', 'replace_text');

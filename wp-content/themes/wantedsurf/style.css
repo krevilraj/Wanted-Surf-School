@@ -11,4 +11,5 @@ Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, the
 */
 
 @import "css/custom.css";
+@import "css/woocommerce.css";
 @import "css/responsive.css";
