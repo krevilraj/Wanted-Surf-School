@@ -75,8 +75,8 @@
         ?>
       </nav>
       <div class="myaccountCart">
-        <div class="myaccount"><img src="<?php bloginfo('template_url'); ?>/images/myaccount.svg" alt="My Account"></div>
-        <div class="cart" onclick="openCart()"><img src="<?php bloginfo('template_url'); ?>/images/cart.svg" alt="Cart">
+        <div class="myaccount"><a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"><img src="<?php bloginfo('template_url'); ?>/images/myaccount.svg" alt="My Account"></a></div>
+        <div class="cart"><a href="<?php echo wc_get_cart_url();?>"><img src="<?php bloginfo('template_url'); ?>/images/cart.svg" alt="Cart"></a>
 
         </div>
 
