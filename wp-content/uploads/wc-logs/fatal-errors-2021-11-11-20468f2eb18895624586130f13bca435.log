@@ -1,0 +1,10 @@
+2021-11-11T10:55:20+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function change_some_woocommerce_strings_with_context(), 1 passed in D:\Office\laragon\www\wantedsurf\wp-includes\class-wp-hook.php on line 303 and exactly 4 expected in D:\Office\laragon\www\wantedsurf\wp-content\themes\wantedsurf\functions.php:115
+Stack trace:
+#0 D:\Office\laragon\www\wantedsurf\wp-includes\class-wp-hook.php(303): change_some_woocommerce_strings_with_context('')
+#1 D:\Office\laragon\www\wantedsurf\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#2 D:\Office\laragon\www\wantedsurf\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#3 D:\Office\laragon\www\wantedsurf\wp-content\plugins\woocommerce\templates\content-product.php(57): do_action('woocommerce_aft...')
+#4 D:\Office\laragon\www\wantedsurf\wp-includes\template.php(772): require('D:\\Office\\larag...')
+#5 D:\Office\laragon\www\wantedsurf\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('D:\\Office\\larag...', false)
+#6 D:\Off in D:\Office\laragon\www\wantedsurf\wp-content\themes\wantedsurf\functions.php on line 115
+
