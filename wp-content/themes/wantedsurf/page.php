@@ -23,6 +23,25 @@ get_header();
         // Load posts loop
         while (have_posts()): the_post();
           ?>
+
+          <style>
+              .all-header{
+                  box-shadow: inset 0 0 0 2000px rgb(42 39 41 / 30%);
+                  background-repeat:no-repeat;
+                  background-size:cover;
+                  background-position:center;
+                  background-image:url(<?php
+
+					if(is_cart()){
+						echo get_theme_mod('wantedsurf_cart_image');
+					}elseif(is_account_page()){
+						echo get_theme_mod('wantedsurf_account_image');
+					}elseif(is_checkout()){
+						echo get_theme_mod('wantedsurf_checkout_image');
+					}
+					?>
+
+          </style>
         <section class="all-header">
             <div class="page__title"> <h2><?php the_title()?></h2> </div>
         </section>

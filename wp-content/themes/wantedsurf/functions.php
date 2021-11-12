@@ -116,3 +116,7 @@ function replace_text($text) {
   return $text;
 }
 add_filter('the_content', 'replace_text');
+
+if ( is_product() ) {
+  remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+}
