@@ -77,7 +77,7 @@ get_header();
       <h2>programas</h2>
     </div>
 
-    <?php echo do_shortcode('[products limit="3 " columns="3" category=19]'); ?>
+    <?php echo do_shortcode('[products limit="3" columns="3" category=19]'); ?>
 <!--    <div class="row">-->
 <!--      <div class="col-md-4">-->
 <!--        <div class="programas__item" data-aos="fade-up" data-aos-duration="3000">-->
