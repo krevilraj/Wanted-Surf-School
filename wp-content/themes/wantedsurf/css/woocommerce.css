@@ -190,4 +190,94 @@ nav.woocommerce-MyAccount-navigation ul li a {
     color: var(--primary-color);
 }
 
+.programas .woocommerce ul.products li.product .price{
+    color: #828181 !important;
+    font-size: 1rem;
+}
+
+.all-header {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page__title h2{
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.default-page1 {
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+.cart-collaterals1  .cart_totals {
+  background-color: var(--primary-color);
+    padding: 2rem 1rem;
+
+}
+.cart-collaterals1  .cart_totals h2{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cart_totals table th, .cart_totals .Subtotal {
+    color: #fff;
+}
+
+.cart_totals .woocommerce-Price-amount {
+    color: #fff;
+}
+
+
+
+.woocommerce a.button{
+    display: inline-block !important;
+}
+.woocommerce a.button.alt {
+    background-color: #fff;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 1px solid transparent;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    font-size:1rem;
+}
+.woocommerce a.button.alt:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.woocommerce .product-name a{
+    color:var(--primary-color);
+}
+
+.woocommerce button.button {
+    background-color: var(--primary-color);
+    color: #fff;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    text-transform: uppercase;
+}
+
+.woocommerce table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+    width: 100%;
+    max-width: 180px;
+
+}
+
+.woocommerce .product-name , .woocommerce .product-price, .woocommerce .product-quantity , .woocommerce .product-subtotal {
+    text-transform: uppercase;
+}
+
+
+.woocommerce .woocommerce-MyAccount-navigation, .woocommerce-MyAccount-content {
+    box-shadow: none;
+}
+
 /* ========================= css hem raj Close  ============================= */

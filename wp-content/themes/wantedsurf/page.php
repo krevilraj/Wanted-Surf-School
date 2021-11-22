@@ -43,7 +43,7 @@ get_header();
 
           </style>
         <section class="all-header">
-            <div class="page__title"> <h2><?php the_title()?></h2> </div>
+            <div class="page__title"> <h2 class="heading__style__center-white"><?php the_title()?></h2> </div>
         </section>
           <div class="content-area">
           <main class=" default-page1">
