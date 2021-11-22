@@ -7,8 +7,8 @@ function dc_customize_contact( $wp_customize ) {
 // Create our sections
 
   $wp_customize->add_section( 'dc_contact' , array(
-    'title'             => _('Contact', 'dc'),
-    'description'       => _('Contact Description', 'dc'),
+    'title'             => __('Contact', 'dc'),
+    'description'       => __('Contact Description', 'dc'),
   ) );
 
 // Create our settings
@@ -18,7 +18,7 @@ function dc_customize_contact( $wp_customize ) {
     'transport'     => 'refresh',
   ) );
   $wp_customize->add_control( 'dc_location_control', array(
-    'label'      => _('Address', 'dc'),
+    'label'      => __('Address', 'dc'),
     'section'    => 'dc_contact',
     'settings'   => 'dc_location',
     'type'       => 'text',
@@ -33,7 +33,7 @@ function dc_customize_contact( $wp_customize ) {
     'transport'     => 'refresh',
   ) );
   $wp_customize->add_control( 'dc_phone_control', array(
-    'label'      => _('Phone', 'dc'),
+    'label'      => __('Phone', 'dc'),
     'section'    => 'dc_contact',
     'settings'   => 'dc_phone',
     'type'       => 'text',
@@ -47,7 +47,7 @@ function dc_customize_contact( $wp_customize ) {
     'transport'     => 'refresh',
   ) );
   $wp_customize->add_control( 'dc_email_control', array(
-    'label'      => _('Email', 'dc'),
+    'label'      => __('Email', 'dc'),
     'section'    => 'dc_contact',
     'settings'   => 'dc_email',
     'type'       => 'text',
