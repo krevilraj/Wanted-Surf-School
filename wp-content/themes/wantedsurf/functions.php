@@ -111,12 +111,16 @@ function lozaizidoro_config()
 
 add_action('after_setup_theme', 'lozaizidoro_config', 0);
 
-function replace_text($text) {
-  $text = str_replace('minutes', 'm', $text);
-  return $text;
-}
-add_filter('the_content', 'replace_text');
+// Change WooCommerce "Related products" text
 
-if ( is_product() ) {
-  remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+add_filter('gettext', 'change_rp_text', 10, 3);
+add_filter('ngettext', 'change_rp_text', 10, 3);
+
+function change_rp_text($translated, $text, $domain)
+{
+  if ($text === 'Related products' && $domain === 'woocommerce') {
+    $translated = esc_html__('Check out our other products', $domain);
+  }
+  return $translated;
 }
+

@@ -113,6 +113,9 @@
     .footer__nav {
         margin: 2rem 0;
     }
+    .woocommerce div.product .product_title{
+        margin-top: 55px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -182,12 +185,74 @@
     .homeAbout .homeAbout__right {
         padding-left: unset;
     }
+
+   /*  programas */
+    .programas .programas__heading h2 {
+        font-size: 25px;
+    }
+    .programas .products li h2 {
+        font-size: 19px !important;
+    }
+    .programas .products .woocommerce-Price-amount {
+        font-size: 18px;
+    }
+
+/* about home page */
+    .homeAbout .homeAbout__right h2 {
+        font-size: 25px;
+    }
+
+    .homeNossas .homeNossas__left h2 {
+        font-size:25px;
+    }
+
+    .equipa .equipa__heading h2 {
+        font-size:25px;
+    }
+
+/*    wocommerce */
+    .single-product .wc-tabs-wrapper {
+        display: unset;
+    }
+    .woocommerce div.product .woocommerce-tabs ul.tabs{
+        flex-direction: row;
+        max-width: unset;
+    }
+
+    .woocommerce div.product .woocommerce-tabs .panel {
+        max-width: 100%;
+    }
+
+    .related.products > h2 {
+        font-size: 25px;
+    }
+
+    .products .woocommerce-loop-product__title {
+        font-size: 19px !important;
+    }
 }
 
-@media (max-width: 1199.98px) {
 
-}
 
 @media (max-width: 1399.98px) {
-    ...
+/*  navbar  */
+    .header .navbar .nav-links li a{
+        font-size: 14px;
+    }
+
+    .logoNav .custom-logo-link img{
+        max-width: 135px;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+    /*  navbar  */
+    .header .navbar .nav-links li a{
+        font-size: 14px;
+    }
+
+    .logoNav .custom-logo-link img{
+        max-width: 100px;
+    }
 }

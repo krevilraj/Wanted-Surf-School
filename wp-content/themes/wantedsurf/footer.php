@@ -43,8 +43,8 @@
           <ul>
 
             <li><a href="mailto:<?php echo get_theme_mod('dc_email') ?>"><?php echo get_theme_mod('dc_email') ?></a></li>
-            <li><a href="tel:<?php echo get_theme_mod('dc_location') ?>"><?php echo get_theme_mod('dc_location') ?></a></li>
-            <li><?php echo get_theme_mod('dc_phone') ?></li>
+            <li><a href="tel:<?php echo get_theme_mod('dc_phone') ?>"><?php echo get_theme_mod('dc_phone') ?></a></li>
+            <li><?php echo get_theme_mod('dc_location') ?></li>
           </ul>
         </div>
         <div class="footer__social">
